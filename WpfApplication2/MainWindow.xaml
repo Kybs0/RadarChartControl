@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wpfApplication2="clr-namespace:WpfApplication2"
+        Title="MainWindow" Height="350" Width="525" Background="LightGray">
+    <Grid>
+        <wpfApplication2:RadarChartControl x:Name="RadarChartControl" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <wpfApplication2:RadarChartControl.Arguments>
+                <wpfApplication2:ArgumentModel Name="C#" IconSource="Chart_Bar_Big.png"></wpfApplication2:ArgumentModel>
+                <wpfApplication2:ArgumentModel Name="JAVA" IconSource="Blueprint_Blog.png"></wpfApplication2:ArgumentModel>
+                <wpfApplication2:ArgumentModel Name="Python" IconSource="Chart_Graph_Descending.png"></wpfApplication2:ArgumentModel>
+                <wpfApplication2:ArgumentModel Name="VB" IconSource="Chart_Bar_Big.png"></wpfApplication2:ArgumentModel>
+                <wpfApplication2:ArgumentModel Name="其它" IconSource="Chart_Graph_Descending.png"></wpfApplication2:ArgumentModel>
+            </wpfApplication2:RadarChartControl.Arguments>
+            <wpfApplication2:RadarChartControl.Datas>
+                <wpfApplication2:ChartItem Name="应聘者A" Color="#FF07C507">
+                    <wpfApplication2:ChartItem.DataList>
+                        <wpfApplication2:ChartData Data="1"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="3"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="3"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="4"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="4"></wpfApplication2:ChartData>
+                    </wpfApplication2:ChartItem.DataList>
+                </wpfApplication2:ChartItem>
+                <wpfApplication2:ChartItem Name="应聘者B" Color="#FF508BF3">
+                    <wpfApplication2:ChartItem.DataList>
+                        <wpfApplication2:ChartData Data="4"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="1"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="2"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="1"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="1"></wpfApplication2:ChartData>
+                    </wpfApplication2:ChartItem.DataList>
+                </wpfApplication2:ChartItem>
+                <wpfApplication2:ChartItem Name="应聘者C" Color="#FFF73131">
+                    <wpfApplication2:ChartItem.DataList>
+                        <wpfApplication2:ChartData Data="2"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="2"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="3"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="3"></wpfApplication2:ChartData>
+                        <wpfApplication2:ChartData Data="3"></wpfApplication2:ChartData>
+                    </wpfApplication2:ChartItem.DataList>
+                </wpfApplication2:ChartItem>
+            </wpfApplication2:RadarChartControl.Datas>
+        </wpfApplication2:RadarChartControl>
+    </Grid>
+</Window>
